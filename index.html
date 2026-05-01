@@ -1,95 +1,121 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Z1 Elite Security Services</title>
+<meta charset="UTF-8">
+<title>Z1 Elite Security Services</title>
 
-  <style>
-    body{
-      margin:0;
-      font-family: Arial;
-      background:#0a0a0a;
-      color:white;
-    }
+<style>
+body{
+  margin:0;
+  font-family:Arial;
+  background:#0a0a0a;
+  color:white;
+}
 
-    /* NAVBAR */
-    nav{
-      background:black;
-      padding:15px;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-    }
+/* NAVBAR */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 30px;
+  background:#000;
+  border-bottom:1px solid #222;
+}
 
-    .logo{
-      font-size:22px;
-      font-weight:bold;
-      color:gold;
-    }
+nav img{
+  height:45px;
+}
 
-    .menu a{
-      color:white;
-      margin:0 10px;
-      text-decoration:none;
-      font-weight:bold;
-    }
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 12px;
+  font-weight:bold;
+}
 
-    .menu a:hover{
-      color:gold;
-    }
+nav a:hover{
+  color:gold;
+}
 
-    /* HERO */
-    .hero{
-      text-align:center;
-      padding:70px 20px;
-    }
+/* HERO */
+.hero{
+  text-align:center;
+  padding:80px 20px;
+}
 
-    .hero h1{
-      font-size:40px;
-    }
+.hero img{
+  width:120px;
+  margin-bottom:10px;
+}
 
-    .btn{
-      padding:12px 20px;
-      margin:10px;
-      background:gold;
-      color:black;
-      text-decoration:none;
-      display:inline-block;
-      border-radius:6px;
-      font-weight:bold;
-    }
+.hero h1{
+  font-size:42px;
+  margin:10px 0;
+}
 
-    /* SECTION */
-    .section{
-      padding:50px 20px;
-      text-align:center;
-    }
+.hero p{
+  color:#bbb;
+}
 
-    .box{
-      background:#151515;
-      padding:15px;
-      margin:10px auto;
-      width:80%;
-      border-radius:8px;
-    }
+.btn{
+  display:inline-block;
+  padding:12px 20px;
+  margin:10px;
+  background:gold;
+  color:black;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:6px;
+}
 
-    footer{
-      background:black;
-      text-align:center;
-      padding:15px;
-      margin-top:30px;
-      color:#888;
-    }
-  </style>
+/* SECTION */
+.section{
+  padding:60px 20px;
+  text-align:center;
+}
+
+.box{
+  background:#151515;
+  padding:15px;
+  margin:10px auto;
+  width:80%;
+  border-radius:8px;
+}
+
+/* GRID */
+.grid{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+/* CONTACT */
+input, textarea{
+  width:80%;
+  padding:10px;
+  margin:8px;
+  border:none;
+  border-radius:5px;
+}
+
+/* FOOTER */
+footer{
+  background:#000;
+  text-align:center;
+  padding:15px;
+  color:#888;
+  margin-top:30px;
+}
+</style>
 </head>
 
 <body>
 
 <!-- NAVBAR -->
 <nav>
-  <div class="logo">Z1 Elite Security</div>
+  <img src="logo.png">
 
-  <div class="menu">
+  <div>
     <a href="#">Home</a>
     <a href="careers.html">Careers</a>
     <a href="contractors.html">Contractors</a>
@@ -99,8 +125,10 @@
 
 <!-- HERO -->
 <div class="hero">
-  <h1>Elite Security Solutions Across the UK</h1>
-  <p>Professional Guards • SIA Licensed • Trusted Protection</p>
+  <img src="logo.png">
+
+  <h1>Z1 Elite Security Services</h1>
+  <p>Elite Security Solutions Across the UK</p>
 
   <a class="btn" href="careers.html">Join Our Team</a>
   <a class="btn" href="contractors.html">Work With Us</a>
@@ -110,10 +138,34 @@
 <div class="section">
   <h2>Our Services</h2>
 
-  <div class="box">Security Guards (Retail, Construction, Corporate)</div>
-  <div class="box">Door Supervision (SIA Licensed)</div>
-  <div class="box">CCTV Monitoring</div>
-  <div class="box">Event Security</div>
+  <div class="box">Security Guards (Retail • Construction • Corporate)</div>
+  <div class="box">Door Supervision (SIA Licensed Staff)</div>
+  <div class="box">CCTV Monitoring & Alarm Response</div>
+  <div class="box">Event Security & Crowd Control</div>
+  <div class="box">Concierge & Front Desk Security</div>
+</div>
+
+<!-- WHY US -->
+<div class="section">
+  <h2>Why Choose Us</h2>
+
+  <div class="box">✔ SIA Licensed Professionals</div>
+  <div class="box">✔ 24/7 Reliable Protection</div>
+  <div class="box">✔ Fast Response Team</div>
+  <div class="box">✔ Trusted by Contractors</div>
+</div>
+
+<!-- CAREERS -->
+<div class="section">
+  <h2>Apply for Jobs</h2>
+
+  <form action="mailto:z1elitesecurity@gmail.com" method="post">
+    <input type="text" placeholder="Full Name"><br>
+    <input type="email" placeholder="Email"><br>
+    <input type="text" placeholder="Phone Number"><br>
+    <textarea placeholder="Experience / Message"></textarea><br>
+    <button class="btn" type="submit">Send Application</button>
+  </form>
 </div>
 
 <!-- CONTACT -->
@@ -127,7 +179,7 @@
 
 <!-- FOOTER -->
 <footer>
-  © 2026 Z1 Elite Security Services
+  © 2026 Z1 Elite Security Services | UK Security Solutions
 </footer>
 
 </body>
