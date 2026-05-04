@@ -3,17 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Z1 Elite Security | Home</title>
+  <title>Z1 Elite Security | Professional Security Solutions UK</title>
   <link rel="icon" href="logo.png">
-  <link rel="stylesheet" href="style.css">
   <style>
-    /* Hero Section with Banner Image */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Sticky Navigation */
+    nav {
+      background: #000;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 50px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      flex-wrap: wrap;
+    }
+
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: gold;
+    }
+
+    /* Hero Section */
     .hero {
       position: relative;
       width: 100%;
       height: 90vh;
       min-height: 500px;
-      background: url('security-banner.png') center center/cover no-repeat;
+      background: url('your-second-image.png') center center/cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -37,6 +86,7 @@
       margin-bottom: 20px;
       font-weight: 700;
       text-transform: uppercase;
+      color: white;
     }
 
     .hero p {
@@ -45,9 +95,265 @@
       margin-bottom: 30px;
     }
 
+    .btn {
+      display: inline-block;
+      background: gold;
+      color: black;
+      padding: 12px 30px;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid gold;
+      color: gold;
+    }
+
+    .btn-outline:hover {
+      background: gold;
+      color: black;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    /* Sections */
+    .section {
+      padding: 70px 50px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      color: #000;
+      position: relative;
+    }
+
+    .section h2::after {
+      content: '';
+      width: 80px;
+      height: 4px;
+      background: gold;
+      display: block;
+      margin: 15px auto 0;
+    }
+
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .service-card {
+      background: #f9f9f9;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .service-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    /* Two Columns */
+    .two-columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .info-box {
+      background: #f9f9f9;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .info-box ul {
+      list-style: none;
+      margin-top: 15px;
+    }
+
+    .info-box ul li {
+      margin: 10px 0;
+    }
+
+    /* Testimonials */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .testimonial-card {
+      background: #f9f9f9;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      font-style: italic;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .testimonial-card h4 {
+      margin-top: 15px;
+      color: gold;
+      font-weight: bold;
+    }
+
+    /* Client Logos */
+    .clients {
+      background: #f0f0f0;
+      text-align: center;
+    }
+
+    .logo-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .logo-item {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    /* CTA Section */
+    .cta {
+      background: linear-gradient(135deg, #000, #333);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .cta h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      width: 100%;
+      background: gold;
+      color: black;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      background: #000;
+      color: white;
+      padding: 50px 50px 20px;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-column h4 {
+      margin-bottom: 20px;
+      color: gold;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #333;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #25D366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+      transition: 0.3s;
+    }
+
+    .whatsapp-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Back to Top */
+    .back-to-top {
+      position: fixed;
+      bottom: 100px;
+      right: 30px;
+      background: gold;
+      color: black;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-weight: bold;
+      z-index: 1000;
+      cursor: pointer;
+    }
+
     @media (max-width: 800px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
       .hero h1 {
         font-size: 2rem;
+      }
+      .section {
+        padding: 40px 20px;
       }
     }
   </style>
@@ -55,27 +361,30 @@
 <body>
 
 <nav>
-  <div class="logo-text">Z1 SECURITY</div>
+  <div class="logo-text">Z1 ELITE SECURITY</div>
   <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="careers.html">Careers</a></li>
-    <li><a href="contractors.html">Contractors</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#careers">Careers</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
-<div class="hero">
+<!-- Hero Section -->
+<div class="hero" id="home">
   <div class="hero-overlay">
     <h1>Z1 ELITE SECURITY</h1>
     <p>Professional Security Solutions Across the UK</p>
     <div>
-      <a href="careers.html" class="btn">Careers</a>
-      <a href="contact.html" class="btn">Contact</a>
+      <a href="#careers" class="btn">Careers</a>
+      <a href="#contact" class="btn btn-outline">Contact</a>
     </div>
   </div>
 </div>
 
-<div class="section">
+<!-- Services -->
+<div class="section" id="services">
   <h2>Our Security Services</h2>
   <div class="services-grid">
     <div class="service-card">
@@ -97,6 +406,7 @@
   </div>
 </div>
 
+<!-- Why Choose Us -->
 <div class="section">
   <h2>Why Choose Z1 Elite</h2>
   <div class="two-columns">
@@ -121,6 +431,85 @@
   </div>
 </div>
 
+<!-- Client Logos -->
+<div class="section clients">
+  <h2>Our Trusted Partners</h2>
+  <div class="logo-grid">
+    <div class="logo-item">🏢 UK Construction Ltd</div>
+    <div class="logo-item">🏭 London Retail Group</div>
+    <div class="logo-item">🏨 Premier Hotels UK</div>
+    <div class="logo-item">🏗️ BuildCorp</div>
+  </div>
+</div>
+
+<!-- Testimonials -->
+<div class="section" id="testimonials">
+  <h2>What Our Clients Say</h2>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      "Professional and reliable team. Z1 Elite provided excellent security for our corporate event."
+      <h4>— Sarah Johnson, Event Manager</h4>
+    </div>
+    <div class="testimonial-card">
+      "24/7 monitoring gave us peace of mind. Highly recommended for construction sites."
+      <h4>— Mark Davis, Site Director</h4>
+    </div>
+    <div class="testimonial-card">
+      "Quick response time and well-trained guards. Best security company we've worked with."
+      <h4>— Lisa Brown, Retail Owner</h4>
+    </div>
+  </div>
+</div>
+
+<!-- Careers Section -->
+<div class="section" id="careers">
+  <h2>Join Our Team</h2>
+  <div class="two-columns">
+    <div class="info-box">
+      <h3>🔒 Security Officer</h3>
+      <p>Full-time • London</p>
+      <p>SIA license required. Competitive salary + benefits.</p>
+      <a href="#contact" class="btn" style="margin-top:15px; display:inline-block;">Apply Now</a>
+    </div>
+    <div class="info-box">
+      <h3>📡 CCTV Operator</h3>
+      <p>Full-time • Manchester</p>
+      <p>Experience in surveillance systems preferred.</p>
+      <a href="#contact" class="btn" style="margin-top:15px; display:inline-block;">Apply Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- CTA Section -->
+<div class="cta">
+  <h3>Need a Security Solution?</h3>
+  <p>Get a free consultation from our experts today.</p>
+  <a href="#contact" class="btn" style="background: white; color: black;">Request Callback</a>
+</div>
+
+<!-- Contact Section -->
+<div class="section" id="contact">
+  <h2>Get In Touch</h2>
+  <div class="two-columns">
+    <div class="info-box">
+      <h3>📞 Contact Info</h3>
+      <p>📧 z1elitesecurity@gmail.com</p>
+      <p>📞 +44 20 1234 5678</p>
+      <p>📍 London, United Kingdom</p>
+      <p>🕐 24/7 Emergency Response</p>
+    </div>
+    <div class="contact-form">
+      <form action="#" method="post">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="tel" placeholder="Phone Number">
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+</div>
+
 <footer>
   <div class="footer-content">
     <div class="footer-column">
@@ -128,10 +517,10 @@
       <p>Professional security solutions provider across UK. SIA licensed & fully insured.</p>
     </div>
     <div class="footer-column">
-      <h4>Contact</h4>
-      <p>📧 z1elitesecurity@gmail.com</p>
-      <p>📞 +44 20 1234 5678</p>
-      <p>📍 London, United Kingdom</p>
+      <h4>Quick Links</h4>
+      <p><a href="#home" style="color:white; text-decoration:none;">Home</a></p>
+      <p><a href="#services" style="color:white; text-decoration:none;">Services</a></p>
+      <p><a href="#careers" style="color:white; text-decoration:none;">Careers</a></p>
     </div>
     <div class="footer-column">
       <h4>Hours</h4>
@@ -140,9 +529,32 @@
     </div>
   </div>
   <div class="copyright">
-    © 2026 Z1 Elite Security Services | Black & White Professional Security
+    © 2026 Z1 Elite Security Services | Professional Security Solutions Across the UK
   </div>
 </footer>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/442012345678" class="whatsapp-btn" target="_blank">
+  💬 WhatsApp Us
+</a>
+
+<!-- Back to Top Button -->
+<div class="back-to-top" id="backToTop">⬆</div>
+
+<script>
+  // Back to Top Button
+  const backBtn = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    if(window.scrollY > 300) {
+      backBtn.style.display = 'flex';
+    } else {
+      backBtn.style.display = 'none';
+    }
+  });
+  backBtn.addEventListener('click', () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  });
+</script>
 
 </body>
 </html>
