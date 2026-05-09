@@ -4,12 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO -->
   <title>Z1 Elite Security Services | Security Company London</title>
 
-  <meta name="description" content="Z1 Elite Security Services provides professional SIA security guards, CCTV monitoring, event security, retail security and corporate security services across London and the UK.">
+  <meta name="description" content="Z1 Elite Security Services provides professional SIA security guards, CCTV monitoring, event security, retail security and corporate security services in London and across the UK.">
 
-  <meta name="keywords" content="Z1 Elite Security Services, Security Company London, SIA Security Guards, CCTV Monitoring, Event Security, Retail Security, Concierge Security, Corporate Security UK">
+  <meta name="keywords" content="Z1 Elite Security Services, Security Company London, SIA Security Guards, CCTV Monitoring, Event Security, Retail Security, Corporate Security UK">
 
   <meta name="author" content="Z1 Elite Security Services">
 
@@ -19,7 +18,7 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="Z1 Elite Security Services">
-  <meta property="og:description" content="Professional security solutions across London and the UK.">
+  <meta property="og:description" content="Professional security services across London and the UK.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://z1elitesecurity.com">
   <meta property="og:image" content="https://z1elitesecurity.com/logo.png">
@@ -27,58 +26,37 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Z1 Elite Security Services">
-  <meta name="twitter:description" content="Professional security solutions across London and the UK.">
+  <meta name="twitter:description" content="Professional security services across London and the UK.">
   <meta name="twitter:image" content="https://z1elitesecurity.com/logo.png">
 
   <link rel="icon" href="logo.png">
   <link rel="stylesheet" href="style.css">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      color: #fff;
-      background: #000;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: black;
+      color: white;
     }
 
     nav {
-      background: #000;
-      color: white;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      padding: 18px 50px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      flex-wrap: wrap;
+      padding: 15px 40px;
+      background: black;
       border-bottom: 1px solid #222;
     }
 
-    .logo-text {
-      font-size: 1.5rem;
-      font-weight: bold;
-      letter-spacing: 2px;
-    }
-
     nav ul {
-      display: flex;
       list-style: none;
-      gap: 30px;
-      flex-wrap: wrap;
+      display: flex;
+      gap: 20px;
     }
 
     nav ul li a {
       color: white;
       text-decoration: none;
-      font-weight: 500;
-      transition: 0.3s;
     }
 
     nav ul li a:hover {
@@ -86,292 +64,119 @@
     }
 
     .hero {
-      position: relative;
-      width: 100%;
       height: 90vh;
-      min-height: 500px;
-      background: url('bg.png.PNG') center center/cover no-repeat;
+      background: url('bg.png.PNG') center/cover no-repeat;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       text-align: center;
     }
 
     .hero-overlay {
-      background: rgba(0, 0, 0, 0.7);
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-
-    .hero h1 {
-      font-size: 4rem;
-      letter-spacing: 4px;
-      margin-bottom: 20px;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: white;
-    }
-
-    .hero p {
-      font-size: 1.3rem;
-      color: #dddddd;
-      margin-bottom: 30px;
+      background: rgba(0,0,0,0.6);
+      padding: 40px;
     }
 
     .btn {
-      display: inline-block;
       background: gold;
       color: black;
-      padding: 12px 30px;
+      padding: 10px 20px;
       margin: 10px;
       text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-      transition: 0.3s;
-      border: none;
-      cursor: pointer;
-    }
-
-    .btn-outline {
-      background: transparent;
-      border: 2px solid gold;
-      color: gold;
-    }
-
-    .btn-outline:hover {
-      background: gold;
-      color: black;
-    }
-
-    .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      display: inline-block;
     }
 
     .section {
-      padding: 70px 50px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .section h2 {
+      padding: 60px 20px;
       text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 50px;
-      color: #fff;
-      position: relative;
-    }
-
-    .section h2::after {
-      content: '';
-      width: 80px;
-      height: 4px;
-      background: gold;
-      display: block;
-      margin: 15px auto 0;
     }
 
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-top: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
     }
 
     .service-card {
       background: #111;
-      padding: 30px;
+      padding: 20px;
       border-radius: 10px;
-      text-align: center;
-      transition: 0.3s;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-      color: #fff;
-    }
-
-    .service-card:hover {
-      transform: translateY(-10px);
-      background: #1a1a1a;
-    }
-
-    .service-card h3 {
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-    }
-
-    .two-columns {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-    }
-
-    .info-box {
-      background: #111;
-      padding: 30px;
-      border-radius: 10px;
-      border: 1px solid #222;
-      color: #fff;
-    }
-
-    .info-box ul {
-      list-style: none;
-      margin-top: 15px;
-    }
-
-    .info-box ul li {
-      margin: 10px 0;
-    }
-
-    .testimonials-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-    }
-
-    .testimonial-card {
-      background: #111;
-      padding: 30px;
-      border-radius: 10px;
-      text-align: center;
-      font-style: italic;
-      color: #fff;
-    }
-
-    .testimonial-card h4 {
-      margin-top: 15px;
-      color: gold;
-    }
-
-    .clients {
-      background: #0a0a0a;
-      text-align: center;
-    }
-
-    .logo-grid {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 40px;
-      margin-top: 30px;
-    }
-
-    .logo-item {
-      background: #1a1a1a;
-      color: #fff;
-      padding: 20px 30px;
-      border-radius: 8px;
-      font-weight: bold;
-      font-size: 1.2rem;
-    }
-
-    .cta {
-      background: linear-gradient(135deg, #000, #222);
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    .cta h3 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    .contact-form {
-      max-width: 600px;
-      margin: auto;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 12px;
-      margin: 10px 0;
-      border: 1px solid #333;
-      border-radius: 5px;
-      background: #1a1a1a;
-      color: #fff;
-    }
-
-    .contact-form button {
-      width: 100%;
-      background: gold;
-      color: black;
-      font-weight: bold;
     }
 
     footer {
-      background: #000;
-      color: white;
-      padding: 50px 50px 20px;
-      border-top: 1px solid #222;
-    }
-
-    .footer-content {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 40px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .footer-column h4 {
-      margin-bottom: 20px;
-      color: gold;
-    }
-
-    .copyright {
       text-align: center;
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid #333;
-    }
-
-    .whatsapp-btn {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background: #25D366;
-      color: white;
-      padding: 15px 20px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      z-index: 1000;
-    }
-
-    .back-to-top {
-      position: fixed;
-      bottom: 100px;
-      right: 30px;
-      background: gold;
-      color: black;
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      z-index: 1000;
-    }
-
-    @media (max-width: 800px) {
-      nav {
-        flex-direction: column;
-        gap: 15px;
-      }
-
-      .hero h1 {
-        font-size: 2rem;
-      }
-
-      .section {
-        padding: 40px 20px;
-      }
+      padding: 30px;
+      border-top: 1px solid #222;
     }
   </style>
 </head>
+
+<body>
+
+<nav>
+  <div><b>Z1 ELITE SECURITY</b></div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#careers">Careers</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero" id="home">
+  <div class="hero-overlay">
+    <h1>Z1 ELITE SECURITY</h1>
+    <p>Professional Security Services Across the UK</p>
+    <a href="#contact" class="btn">Contact</a>
+    <a href="#careers" class="btn">Careers</a>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<div class="section" id="services">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    <div class="service-card">SIA Guards</div>
+    <div class="service-card">CCTV Monitoring</div>
+    <div class="service-card">Event Security</div>
+    <div class="service-card">Concierge Security</div>
+  </div>
+</div>
+
+<!-- CAREERS -->
+<div class="section" id="careers">
+  <h2>Careers</h2>
+  <p>Join our professional security team in London.</p>
+</div>
+
+<!-- CONTACT -->
+<div class="section" id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: zaidi1elitesecurity@gmail.com</p>
+  <p>Phone: 07795230874</p>
+</div>
+
+<footer>
+  © 2026 Z1 Elite Security Services
+</footer>
+
+<!-- SCRIPT -->
+<script>
+  const backBtn = document.getElementById('backToTop');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backBtn.style.display = 'flex';
+    } else {
+      backBtn.style.display = 'none';
+    }
+  });
+
+  backBtn?.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>
