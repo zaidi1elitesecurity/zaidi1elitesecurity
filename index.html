@@ -6,8 +6,11 @@
 
   <!-- SEO Fixed -->
   <title>Z1 Elite Security Services | Security Company London UK</title>
+
   <meta name="description" content="Z1 Elite Security provides professional security solutions across the UK including SIA Guards, CCTV Monitoring, Event Security, Concierge Services and 24/7 emergency response.">
+
   <meta name="keywords" content="Z1 Elite Security, Z1 Security, Security Company UK, SIA Guards London, CCTV Monitoring, Event Security, Security Services UK">
+
   <meta name="author" content="Z1 Elite Security">
   <meta name="robots" content="index, follow">
 
@@ -15,10 +18,83 @@
   <link rel="canonical" href="https://z1elitesecurity.com/">
   <link rel="stylesheet" href="style.css">
 
+  <!-- Open Graph SEO -->
+  <meta property="og:title" content="Z1 Elite Security Services | London UK">
+  <meta property="og:description" content="Professional SIA Licensed Security Company in UK offering Guards, CCTV & Event Security.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://z1elitesecurity.com">
+
+  <!-- Schema SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Z1 Elite Security Services",
+    "url": "https://z1elitesecurity.com",
+    "email": "zaidi1elitesecurity@gmail.com",
+    "telephone": "+447795230874",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "London",
+      "addressCountry": "UK"
+    }
+  }
+  </script>
+
   <style>
-    /* Hero Section with Banner Image */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #fff;
+      background: #000;
+    }
+
+    /* Sticky Navigation */
+    nav {
+      background: #000;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 50px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      flex-wrap: wrap;
+    }
+
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: gold;
+    }
+
+    /* Hero Section */
     .hero {
-      <h2 style="display:none;">Security Company London | SIA Licensed Guards UK</h2>
       position: relative;
       width: 100%;
       height: 90vh;
@@ -47,6 +123,7 @@
       margin-bottom: 20px;
       font-weight: 700;
       text-transform: uppercase;
+      color: white;
     }
 
     .hero p {
@@ -55,23 +132,80 @@
       margin-bottom: 30px;
     }
 
-    .about-section {
-      padding: 60px 20px;
-      text-align: center;
+    .btn {
+      display: inline-block;
+      background: gold;
+      color: black;
+      padding: 12px 30px;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
+      border: none;
+      cursor: pointer;
     }
 
-    .reviews-grid {
+    .btn-outline {
+      background: transparent;
+      border: 2px solid gold;
+      color: gold;
+    }
+
+    .btn-outline:hover {
+      background: gold;
+      color: black;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    /* Sections */
+    .section {
+      padding: 70px 50px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      color: #fff;
+    }
+
+    .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
       margin-top: 30px;
     }
 
-    .review-card {
-      padding: 25px;
+    .service-card {
+      background: #111;
+      padding: 30px;
       border-radius: 10px;
-      background: rgba(255,255,255,0.05);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .two-columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .info-box {
+      background: #000;
+      padding: 30px;
+      border-radius: 10px;
+      border: 1px solid #222;
     }
 
     .whatsapp-btn {
@@ -85,7 +219,6 @@
       text-decoration: none;
       font-weight: bold;
       z-index: 9999;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
     }
 
     @media (max-width: 800px) {
@@ -95,31 +228,34 @@
     }
   </style>
 </head>
+
 <body>
 
 <nav>
-  <div class="logo-text">Z1 SECURITY</div>
+  <div class="logo-text">Z1 ELITE SECURITY</div>
   <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="careers.html">Careers</a></li>
-    <li><a href="contractors.html">Contractors</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#careers">Careers</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
-<!-- Hero Banner Preserved -->
-<div class="hero">
+<!-- Hero Section -->
+<div class="hero" id="home">
   <div class="hero-overlay">
     <h1>Z1 ELITE SECURITY</h1>
     <p>Professional Security Solutions Across the UK</p>
     <div>
-      <a href="careers.html" class="btn">Careers</a>
-      <a href="contact.html" class="btn">Contact</a>
+      <a href="#careers" class="btn">Careers</a>
+      <a href="#contact" class="btn btn-outline">Contact</a>
     </div>
   </div>
 </div>
 
-<div class="section">
+<!-- Services -->
+<div class="section" id="services">
   <h2>Our Security Services</h2>
   <div class="services-grid">
     <div class="service-card">
@@ -141,6 +277,7 @@
   </div>
 </div>
 
+<!-- Why Choose -->
 <div class="section">
   <h2>Why Choose Z1 Elite</h2>
   <div class="two-columns">
@@ -153,6 +290,7 @@
         <li>✔ Fully Insured & Compliant</li>
       </ul>
     </div>
+
     <div class="info-box">
       <h3>✓ Industry Standards</h3>
       <ul>
@@ -165,75 +303,19 @@
   </div>
 </div>
 
-<!-- Added Professional About Section -->
-<div class="about-section">
-  <h2>About Z1 Elite Security</h2>
-  <p>
-    Z1 Elite Security is a trusted professional security company delivering
-    premium protection services across the United Kingdom. We specialise in
-    SIA licensed guarding, CCTV monitoring, event security, concierge services,
-    construction site security and emergency rapid response.
-  </p>
-  <p>
-    Our mission is to provide reliable, professional and fully compliant
-    security solutions tailored to every client’s needs with excellence,
-    trust and complete peace of mind.
-  </p>
-</div>
-
-<!-- Added Reviews -->
-<div class="section">
-  <h2>Client Reviews</h2>
-  <div class="reviews-grid">
-
-    <div class="review-card">
-      <h3>★★★★★</h3>
-      <p>"Excellent security service. Very professional staff and always reliable."</p>
-      <strong>— James R.</strong>
-    </div>
-
-    <div class="review-card">
-      <h3>★★★★★</h3>
-      <p>"Used for our corporate event and the team was outstanding. Highly recommended."</p>
-      <strong>— Sarah M.</strong>
-    </div>
-
-    <div class="review-card">
-      <h3>★★★★★</h3>
-      <p>"Strong communication, quick response and very professional company."</p>
-      <strong>— Daniel K.</strong>
-    </div>
-
-  </div>
-</div>
-
-<footer>
-  <div class="footer-content">
-    <div class="footer-column">
-      <h4>Z1 ELITE SECURITY</h4>
-      <p>Professional security solutions provider across UK. SIA licensed & fully insured.</p>
-    </div>
-
-    <div class="footer-column">
-      <h4>Contact</h4>
+<!-- Contact -->
+<div class="section" id="contact">
+  <h2>Get In Touch</h2>
+  <div class="two-columns">
+    <div class="info-box">
       <p>📧 zaidi1elitesecurity@gmail.com</p>
-      <p>📞 +44 7795 230874</p>
-      <p>📍 London, United Kingdom</p>
-    </div>
-
-    <div class="footer-column">
-      <h4>Hours</h4>
-      <p>24/7 Emergency Response</p>
-      <p>Office: Mon-Fri 9am-6pm</p>
+      <p>📞 07795230874</p>
+      <p>📍 London, UK</p>
     </div>
   </div>
+</div>
 
-  <div class="copyright">
-    © 2026 Z1 Elite Security Services | Black & White Professional Security
-  </div>
-</footer>
-
-<!-- WhatsApp Button -->
+<!-- WhatsApp -->
 <a href="https://wa.me/447795230874" class="whatsapp-btn" target="_blank">
   WhatsApp Us
 </a>
